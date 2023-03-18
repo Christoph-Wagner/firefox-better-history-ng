@@ -74,13 +74,20 @@ class App extends React.Component {
     }
 
     const filteredVisits = [];
+    const xs = search.trim().toLowerCase().split(' ');
 
     for (const visitsArray of visits) {
       filteredVisits.push(
         visitsArray.filter(
-          (visit) =>
-            visit.url.toLowerCase().includes(search.toLowerCase()) ||
-            (visit.title != null && visit.title.toLowerCase().includes(search.toLowerCase()))
+          (visit) => {
+            for(const search_item of xs) {
+              const b = visit.url.toLowerCase().includes( search_item ) ||
+              (visit.title != null && visit.title.toLowerCase().includes(search_item));
+              console.log(b);
+              if(!b){return false;}
+            }
+            return true;
+          }
         )
       );
     }
