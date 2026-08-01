@@ -1,4 +1,5 @@
 import Moment from 'moment';
+import getMessage from './i18n';
 
 function capitalize(word: string) {
   return word.charAt(0).toLocaleUpperCase() + word.slice(1);
@@ -114,10 +115,9 @@ export default class HistoryApi {
   }
 
   static formatWeekHeader(date: Moment.Moment) {
-    const week = 'Week';
     const week_number = date.format('w');
     const year = date.format('YYYY');
-    return `${week} ${week_number}, ${year}`;
+    return getMessage('weekHeader', [week_number, year]);
   }
 
   static formatMonthHeader(date: Moment.Moment) {

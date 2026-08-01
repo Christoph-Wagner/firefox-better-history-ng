@@ -9,7 +9,7 @@
       name="description"
       content="Better History"
     />
-    <title>Better History</title>
+    <title data-i18n="optionsTitle">Better History</title>
     <link href="fira.css" rel="stylesheet">
     <style>
       form {
@@ -19,10 +19,10 @@
   </head>
   <body>
   <form>
-    <label>Region <input type="text" id="region" name="region" /></label>
-    <button type="submit">Save</button>
+    <label><span data-i18n="optionsRegionLabel">Region</span> <input type="text" id="region" name="region" /></label>
+    <button type="submit" data-i18n="optionsSave">Save</button>
 
-    <p>Defaults to your browser’s UI settings, used for all Date and Time displays. Requires something like 'en', 'en-US' or similar codes.</p>
+    <p data-i18n="optionsDescription">Defaults to your browser’s UI settings, used for all Date and Time displays. Requires something like 'en', 'en-US' or similar codes.</p>
   </form>
 
   <script src="options.js"></script>

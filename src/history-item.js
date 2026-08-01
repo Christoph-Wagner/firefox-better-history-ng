@@ -1,12 +1,13 @@
 import Icon from './icon';
 import React from 'react';
+import getMessage from './i18n';
 
 const getLastVisit = (visit) =>
-  'Last visit: ' + new Date(visit.lastVisitTime).toLocaleString(window.ihatereactngbetterhistoryregion);
+  getMessage('lastVisit', new Date(visit.lastVisitTime).toLocaleString(window.ihatereactngbetterhistoryregion));
 const getTitle = (visit) => (visit.title != null && visit.title !== '' ? visit.title : visit.url);
 
 function openTabs(urls) {
-  if (urls.length > 5 && !confirm(`This will open ${urls.length} new tabs, continue?`))
+  if (urls.length > 5 && !confirm(getMessage('openTabsConfirm', String(urls.length))))
     return;
   urls.forEach(url => {
     browser.tabs.create({ url: url });
@@ -14,10 +15,10 @@ function openTabs(urls) {
 }
 
 const OpenAllLink = ({visits}) => (
-  <a className="openNewTab" title={`Open all ${visits.length} links in new tabs`} href="#" onClick={e => {
+  <a className="openNewTab" title={getMessage('openAllLinksTitle', String(visits.length))} href="#" onClick={e => {
     e.stopPropagation();
     openTabs(visits.map((visit) => visit.url));
-  }}>{visits.length} Links</a>
+  }}>{getMessage('linksCount', String(visits.length))}</a>
 )
 export const History = ({ visits, day = false }) => (
   <div>
@@ -42,7 +43,7 @@ export const History = ({ visits, day = false }) => (
         </span>
           <div className="history-item-link">
             <a href={visit.url} title={visit.url} target="_blank" rel="noopener noreferrer">
-              {day ? 'Link' : ''}
+              {day ? getMessage('linkAction') : ''}
             </a>
           </div>
         </div>

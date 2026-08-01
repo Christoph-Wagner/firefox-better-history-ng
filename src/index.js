@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Moment from 'moment';
+import 'moment/locale/ru';
 
 import './index.scss';
 import App from './app';
+import getMessage from './i18n';
 
 async function main() {
   const settingRegion = (await browser.storage.sync.get('region')).region;
@@ -11,6 +13,11 @@ async function main() {
   const language = settingRegion || browser.i18n.getUILanguage();
   window.ihatereactngbetterhistoryregion = language;
   Moment.locale(language);
+
+  const titleMsg = getMessage('extName');
+  if (titleMsg && titleMsg !== 'extName') {
+    document.title = titleMsg;
+  }
 
   const data = await browser.storage.local.get();
   ReactDOM.render(

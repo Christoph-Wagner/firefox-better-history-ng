@@ -1,7 +1,8 @@
 {
-    "description": "A Better History page inspired by Vivaldi",
+    "default_locale": "en",
+    "description": "__MSG_extDescription__",
     "manifest_version": 2,
-    "name": "better-history-ng",
+    "name": "__MSG_extName__",
     "version": "2.2.0",
     "homepage_url": "https://github.com/Christoph-Wagner/firefox-better-history-ng",
     "background": {
@@ -26,7 +27,7 @@
 
     "browser_action": {
         "default_icon": "history.svg",
-        "default_title": "Better History NG"
+        "default_title": "__MSG_browserActionTitle__"
     },
 
     "commands": {

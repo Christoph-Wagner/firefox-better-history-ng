@@ -6,6 +6,7 @@ import DayView from 'day-view';
 import WeekView from 'week-view';
 import MonthView from 'month-view';
 import Icon from 'icon';
+import getMessage from './i18n';
 
 const VIEWS = {
   DAY: 0,
@@ -181,9 +182,9 @@ class App extends React.Component {
               type="text"
               value={search}
               onChange={this.onInputChange.bind(this)}
-              placeholder="Search a website"
+              placeholder={getMessage('searchPlaceholder')}
             />
-            <button className={clearButtonClasses} onClick={() => this.setState({ search: '' })} title="Clear" />
+            <button className={clearButtonClasses} onClick={() => this.setState({ search: '' })} title={getMessage('clearSearch')} />
           </div>
 
           <button className="toolbar-item-right ghost-button align-right" onClick={() => this.previous()}>
@@ -195,7 +196,7 @@ class App extends React.Component {
           {repeatedVisits ? (
             <button
               className="toolbar-item-right ghost-button"
-              title="Hide Repeated Visits"
+              title={getMessage('hideRepeatedVisits')}
               onClick={() => this.toggleRepeatedVisits()}
             >
               <Icon default="multiple" />
@@ -203,20 +204,20 @@ class App extends React.Component {
           ) : (
             <button
               className="toolbar-item-right ghost-button"
-              title="Show Repeated Visits"
+              title={getMessage('showRepeatedVisits')}
               onClick={() => this.toggleRepeatedVisits()}
             >
               <Icon default="multiple-disabled" />
             </button>
           )}
           <button className="toolbar-item-right default-button" onClick={() => this.setView(VIEWS.DAY)}>
-            Day
+            {getMessage('viewDay')}
           </button>
           <button className="toolbar-item-right default-button" onClick={() => this.setView(VIEWS.WEEK)}>
-            Week
+            {getMessage('viewWeek')}
           </button>
           <button className="toolbar-item-right default-button" onClick={() => this.setView(VIEWS.MONTH)}>
-            Month
+            {getMessage('viewMonth')}
           </button>
         </div>
 

@@ -1,0 +1,122 @@
+{
+  "extName": {
+    "message": "Better History NG",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "A Better History page inspired by Vivaldi",
+    "description": "Extension description"
+  },
+  "browserActionTitle": {
+    "message": "Better History NG",
+    "description": "Browser action button title"
+  },
+  "searchPlaceholder": {
+    "message": "Search a website",
+    "description": "Placeholder text for history search input"
+  },
+  "clearSearch": {
+    "message": "Clear",
+    "description": "Tooltip for clear search button"
+  },
+  "hideRepeatedVisits": {
+    "message": "Hide Repeated Visits",
+    "description": "Tooltip to hide repeated visits"
+  },
+  "showRepeatedVisits": {
+    "message": "Show Repeated Visits",
+    "description": "Tooltip to show repeated visits"
+  },
+  "viewDay": {
+    "message": "Day",
+    "description": "Day view tab button"
+  },
+  "viewWeek": {
+    "message": "Week",
+    "description": "Week view tab button"
+  },
+  "viewMonth": {
+    "message": "Month",
+    "description": "Month view tab button"
+  },
+  "emptyHistory": {
+    "message": "Empty",
+    "description": "Text displayed when there is no history items for a day"
+  },
+  "linksCount": {
+    "message": "$COUNT$ Links",
+    "description": "Text showing number of links",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "openAllLinksTitle": {
+    "message": "Open all $COUNT$ links in new tabs",
+    "description": "Tooltip for opening all links in group",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "openTabsConfirm": {
+    "message": "This will open $COUNT$ new tabs, continue?",
+    "description": "Confirmation prompt when opening many tabs",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "lastVisit": {
+    "message": "Last visit: $TIME$",
+    "description": "Tooltip prefix for last visit date time",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "linkAction": {
+    "message": "Link",
+    "description": "Text for direct link button in day view"
+  },
+  "somethingWentWrong": {
+    "message": "Something went wrong :(",
+    "description": "Error message when loading visits fails"
+  },
+  "weekHeader": {
+    "message": "Week $WEEK$, $YEAR$",
+    "description": "Header title for week view",
+    "placeholders": {
+      "week": {
+        "content": "$1"
+      },
+      "year": {
+        "content": "$2"
+      }
+    }
+  },
+  "optionsTitle": {
+    "message": "Better History Settings",
+    "description": "Title of the options page"
+  },
+  "optionsRegionLabel": {
+    "message": "Region",
+    "description": "Label for region/locale setting"
+  },
+  "optionsSave": {
+    "message": "Save",
+    "description": "Save options button"
+  },
+  "optionsDescription": {
+    "message": "Defaults to your browser’s UI settings, used for all Date and Time displays. Requires something like 'en', 'en-US' or similar codes.",
+    "description": "Description of the region setting in options page"
+  },
+  "noscriptMessage": {
+    "message": "You need to enable JavaScript to see your history.",
+    "description": "Message displayed when JavaScript is disabled"
+  }
+}
