@@ -1,0 +1,122 @@
+{
+  "extName": {
+    "message": "Better History NG",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Eine bessere Chronik-Seite, inspiriert von Vivaldi",
+    "description": "Extension description"
+  },
+  "browserActionTitle": {
+    "message": "Better History NG",
+    "description": "Browser action button title"
+  },
+  "searchPlaceholder": {
+    "message": "Nach einer Website suchen",
+    "description": "Placeholder text for history search input"
+  },
+  "clearSearch": {
+    "message": "Löschen",
+    "description": "Tooltip for clear search button"
+  },
+  "hideRepeatedVisits": {
+    "message": "Wiederholte Besuche ausblenden",
+    "description": "Tooltip to hide repeated visits"
+  },
+  "showRepeatedVisits": {
+    "message": "Wiederholte Besuche anzeigen",
+    "description": "Tooltip to show repeated visits"
+  },
+  "viewDay": {
+    "message": "Tag",
+    "description": "Day view tab button"
+  },
+  "viewWeek": {
+    "message": "Woche",
+    "description": "Week view tab button"
+  },
+  "viewMonth": {
+    "message": "Monat",
+    "description": "Month view tab button"
+  },
+  "emptyHistory": {
+    "message": "Keine Ergebnisse",
+    "description": "Text displayed when there is no history items for a day"
+  },
+  "linksCount": {
+    "message": "$COUNT$ Links",
+    "description": "Text showing number of links",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "openAllLinksTitle": {
+    "message": "Alle $COUNT$ Links in neuen Tabs öffnen",
+    "description": "Tooltip for opening all links in group",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "openTabsConfirm": {
+    "message": "Dadurch werden $COUNT$ neue Tabs geöffnet. Möchtest du fortfahren?",
+    "description": "Confirmation prompt when opening many tabs",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "lastVisit": {
+    "message": "Letzter Besuch: $TIME$",
+    "description": "Tooltip prefix for last visit date time",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "linkAction": {
+    "message": "Link",
+    "description": "Text for direct link button in day view"
+  },
+  "somethingWentWrong": {
+    "message": "Leider ist etwas schiefgelaufen :(",
+    "description": "Error message when loading visits fails"
+  },
+  "weekHeader": {
+    "message": "Woche $WEEK$, $YEAR$",
+    "description": "Header title for week view",
+    "placeholders": {
+      "week": {
+        "content": "$1"
+      },
+      "year": {
+        "content": "$2"
+      }
+    }
+  },
+  "optionsTitle": {
+    "message": "Better History Einstellungen",
+    "description": "Title of the options page"
+  },
+  "optionsRegionLabel": {
+    "message": "Region",
+    "description": "Label for region/locale setting"
+  },
+  "optionsSave": {
+    "message": "Speichern",
+    "description": "Save options button"
+  },
+  "optionsDescription": {
+    "message": "Standardmäßig werden die Oberflächen-Einstellungen deines Browsers verwendet. Diese gelten für alle Datums- und Zeitanzeigen. Erforderlich ist ein Code wie „de“ „de-DE“ oder so.",
+    "description": "Description of the region setting in options page"
+  },
+  "noscriptMessage": {
+    "message": "Du musst JavaScript aktivieren, um deine Chronik zu sehen.",
+    "description": "Message displayed when JavaScript is disabled"
+  }
+}
