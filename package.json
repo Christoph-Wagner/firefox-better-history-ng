@@ -1,6 +1,6 @@
 {
     "name": "firefox-better-history-ng",
-    "version": "2.1.0",
+    "version": "2.3.0",
     "description": "Forked from https://github.com/Vincent-P/firefox-better-history",
     "scripts": {
         "build": "webpack --progress",

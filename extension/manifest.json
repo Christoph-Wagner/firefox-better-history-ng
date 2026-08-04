@@ -3,7 +3,7 @@
     "description": "__MSG_extDescription__",
     "manifest_version": 2,
     "name": "__MSG_extName__",
-    "version": "2.2.0",
+    "version": "2.3.0",
     "homepage_url": "https://github.com/Christoph-Wagner/firefox-better-history-ng",
     "background": {
         "scripts": ["dist/background.js"]
