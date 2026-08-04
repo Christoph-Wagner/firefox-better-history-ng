@@ -1,6 +1,7 @@
 import React from 'react';
 import { History } from './history-item';
 import HistoryApi from 'history-api';
+import getMessage from './i18n';
 
 import Icon from 'icon';
 
@@ -26,7 +27,7 @@ const GridItem = ({ date, visits, sameMonth, viewDay }) => {
 
 const MonthView = ({ visits, date, viewDay }) => {
   if (!visits || !date) {
-    return <div>{'Something went wrong :('}</div>;
+    return <div>{getMessage('somethingWentWrong')}</div>;
   }
 
   const firstDayOfMonth = date.clone().startOf('month');

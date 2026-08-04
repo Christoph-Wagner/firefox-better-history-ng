@@ -1,6 +1,7 @@
 import React from 'react';
 import { History } from './history-item';
 import HistoryApi from 'history-api';
+import getMessage from './i18n';
 
 import Icon from 'icon';
 
@@ -19,7 +20,7 @@ const Column = ({ date, visits, viewDay }) => (
 
 const WeekView = ({ visits, date, viewDay }) => {
   if (!visits || !date) {
-    return <div>{'Something went wrong :('}</div>;
+    return <div>{getMessage('somethingWentWrong')}</div>;
   }
 
   let columns = [];
